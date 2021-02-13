@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+
+import Navbar from './Navbar';
+/*
+  import function_name  from 'pass the path of that file'
+*/
+import Home from './Home'
 function App() {
+  
+  const link = "http://www.google.com";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <div className="content">
+        {/* <h1>App Component</h1> */}
+        <Home/>
+      </div>
     </div>
   );
 }
